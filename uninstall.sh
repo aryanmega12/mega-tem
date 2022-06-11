@@ -3,12 +3,12 @@ read -p " Does you want to install aryan-mega-trn Shell in Termux?(Yes/No) : " i
 
 if [[ $input == Yes || $input == yes || $input == y || $input == Y ]]; then
     clear
-    cp bash.mega $HOME
+    cp bash.bashrc $HOME
     cd /data/data/com.termux/files/usr/etc
     rm -rf motd
-    rm -rf bash.mega
+    rm -rf bash.bashrc
     cd $HOME
-    mv bash.mega /data/data/com.termux/files/usr/etc
+    mv bash.bashrc /data/data/com.termux/files/usr/etc
     echo -e "\e[1;91mInstall Shod dadash"
     echo -e "Restart Termux"
     exit  3
